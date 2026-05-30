@@ -1,0 +1,12 @@
+services:
+  data-management:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./media:/app/media
+      - ./users/users.json:/app/users.json:ro
+    env_file:
+      - .env
