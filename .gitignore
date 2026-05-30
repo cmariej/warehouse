@@ -4,6 +4,6 @@
 
 .vscode
 
-data/**
-media/**
-users/**
+data
+media
+users
