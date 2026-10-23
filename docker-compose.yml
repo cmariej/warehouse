@@ -7,6 +7,6 @@ services:
     volumes:
       - ./data:/app/data
       - ./media:/app/media
-      - ./users/users.json:/app/users.json:ro
+      - ./users/users.json:/app/users/users.json:ro
     env_file:
       - .env
